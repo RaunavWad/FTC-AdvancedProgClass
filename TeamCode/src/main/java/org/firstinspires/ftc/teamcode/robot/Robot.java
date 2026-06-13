@@ -25,6 +25,7 @@ public class Robot {
         backRight = hardwareMap.get(DcMotor.class, "br");
 
         hubs = hardwareMap.getAll(LynxModule.class);
+
         for (LynxModule hub : hubs) {
             hub.setBulkCachingMode(LynxModule.BulkCachingMode.MANUAL);
         }
@@ -37,10 +38,12 @@ public class Robot {
         }
 
         loopTime = elapsedTime.milliseconds();
-        Hz = (float) (1000/loopTime);
+        Hz = (float)(1000/loopTime);
+
         myTelemetry.addData("Loop Time", loopTime);
         myTelemetry.addData("Hz", Hz);
         myTelemetry.update();
+
         elapsedTime.reset();
     }
 }
