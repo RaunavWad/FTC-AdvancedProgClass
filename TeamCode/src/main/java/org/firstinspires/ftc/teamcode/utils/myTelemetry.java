@@ -13,8 +13,8 @@ public class myTelemetry {
         tel = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
     }
 
-    public static void addData(String key, Object value){
-        tel.addData(key, value);
+    public static void addData(String label, Object data){
+        tel.addData(label, data);
     }
 
     public static void addLine(String data) {

@@ -19,10 +19,10 @@ public class Robot {
         elapsedTime = new ElapsedTime();
         elapsedTime.reset();
 
-        leftFront = hardwareMap.get(DcMotor.class, "lf");
-        rightFront = hardwareMap.get(DcMotor.class, "rf");
-        backLeft = hardwareMap.get(DcMotor.class, "bl");
-        backRight = hardwareMap.get(DcMotor.class, "br");
+//        leftFront = hardwareMap.get(DcMotor.class, "lf");
+//        rightFront = hardwareMap.get(DcMotor.class, "rf");
+//        backLeft = hardwareMap.get(DcMotor.class, "bl");
+//        backRight = hardwareMap.get(DcMotor.class, "br");
 
         hubs = hardwareMap.getAll(LynxModule.class);
 
