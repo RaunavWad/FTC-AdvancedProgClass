@@ -4,8 +4,7 @@ import com.pedropathing.localization.*;
 import com.pedropathing.localization.constants.*;
 import com.qualcomm.hardware.rev.RevHubOrientationOnRobot;
 
-
-//USES ADIEN'S(PALINDROM'S BOT)
+//USES PALINDROMES BOT
 public class LConstants {
     static {
         TwoWheelConstants.forwardTicksToInches = 0.00300116997590546;
@@ -17,10 +16,7 @@ public class LConstants {
         TwoWheelConstants.forwardEncoderDirection = Encoder.REVERSE;
         TwoWheelConstants.strafeEncoderDirection = Encoder.FORWARD;
         TwoWheelConstants.IMU_HardwareMapName = "imu";
-        TwoWheelConstants.IMU_Orientation = new RevHubOrientationOnRobot(RevHubOrientationOnRobot.LogoFacingDirection.RIGHT, RevHubOrientationOnRobot.UsbFacingDirection.UP);;
+        TwoWheelConstants.IMU_Orientation = new RevHubOrientationOnRobot(RevHubOrientationOnRobot.LogoFacingDirection.RIGHT, RevHubOrientationOnRobot.UsbFacingDirection.UP);
+
     }
 }
-
-
-
-
